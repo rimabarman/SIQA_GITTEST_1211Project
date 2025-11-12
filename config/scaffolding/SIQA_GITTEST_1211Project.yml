@@ -18,16 +18,19 @@ packages:
   wpmServer: https://packages.webmethods.io
   wpmRegistry: licensed
 - name: SIQAJDBCAdapterTests
+  version: "1.0"
   gitServerName: SIQAGitHub
   gitUrl: https://github.com/manoj-jannu-IBM
   gitUsername: manoj-jannu-IBM
   gitBranch: main
 - name: DADA_GlobalVariable1
+  version: "1.0"
   gitServerName: SIQAGitHub
   gitUrl: https://github.com/manoj-jannu-IBM
   gitUsername: manoj-jannu-IBM
   gitBranch: main
 - name: SIQACloudStreamsTests
+  version: "1.0"
   gitServerName: SIQAGitHub
   gitUrl: https://github.com/manoj-jannu-IBM
   gitUsername: manoj-jannu-IBM
@@ -39,30 +42,54 @@ services:
     version: "1.0"
   - name: TPP_services_in_FCS
     version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.66
+  - name: SIQACloudStreamsTests
+    version: "1.0"
 - serviceName: project.siqa_gittest_1211.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:DBInsert
   packages:
   - name: SIQA_GITTEST_1211Project
     version: "1.0"
   - name: TPP_services_in_FCS
     version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.66
+  - name: SIQACloudStreamsTests
+    version: "1.0"
 - serviceName: project.siqa_gittest_1211.integrations:Test_ConnListing
   packages:
   - name: SIQA_GITTEST_1211Project
     version: "1.0"
   - name: TPP_services_in_FCS
     version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.66
+  - name: SIQACloudStreamsTests
+    version: "1.0"
 - serviceName: SIQACloudStreamsTests:connetorOperations
   packages:
   - name: SIQACloudStreamsTests
@@ -89,9 +116,7 @@ services:
     version: 10.7.0.0.66
 - serviceName: SIQAJDBCAdapterTests.adapterServices:getData
   packages:
-  - name: SIQA_GITTEST_1211Project
-    version: "1.0"
-  - name: TPP_services_in_FCS
+  - name: SIQAJDBCAdapterTests
     version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
@@ -108,18 +133,12 @@ services:
 configurationVariables:
   ? artConnection.SIQA_GITTEST_1211Project.project.siqa_gittest_1211.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.password
   : "{AES}D6/2AGfsSWDOcWCLrORnEQ=="
-  ? artConnection.SIQA_GITTEST_1211Project.project.siqa_gittest_1211.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolable
-  : "false"
   ? artConnection.SIQA_GITTEST_1211Project.project.siqa_gittest_1211.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.portNumber
   : "3306"
   ? artConnection.SIQA_GITTEST_1211Project.project.siqa_gittest_1211.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionEnabled
   : "false"
   ? artConnection.SIQA_GITTEST_1211Project.project.siqa_gittest_1211.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.databaseName
   : MYSQL_DATABASE
-  ? artConnection.SIQA_GITTEST_1211Project.project.siqa_gittest_1211.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.trustStore
-  : ""
-  ? artConnection.SIQA_GITTEST_1211Project.project.siqa_gittest_1211.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.networkProtocol
-  : tcp
   ? artConnection.SIQA_GITTEST_1211Project.project.siqa_gittest_1211.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.transactionType
   : NO_TRANSACTION
   ? artConnection.SIQA_GITTEST_1211Project.project.siqa_gittest_1211.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.datasourceClass
@@ -130,9 +149,15 @@ configurationVariables:
   : MySQL
   ? artConnection.SIQA_GITTEST_1211Project.project.siqa_gittest_1211.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.otherProperties
   : loginTimeout=60;driverType=thin;
-  ? artConnection.SIQA_GITTEST_1211Project.project.siqa_gittest_1211.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.driverType
-  : TestDriver
   ? artConnection.SIQA_GITTEST_1211Project.project.siqa_gittest_1211.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.keyStore
   : ""
   ? artConnection.SIQA_GITTEST_1211Project.project.siqa_gittest_1211.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.user
   : siqatest
+  ? artConnection.SIQA_GITTEST_1211Project.project.siqa_gittest_1211.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolable
+  : "false"
+  ? artConnection.SIQA_GITTEST_1211Project.project.siqa_gittest_1211.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.trustStore
+  : ""
+  ? artConnection.SIQA_GITTEST_1211Project.project.siqa_gittest_1211.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.networkProtocol
+  : tcp
+  ? artConnection.SIQA_GITTEST_1211Project.project.siqa_gittest_1211.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.driverType
+  : TestDriver
