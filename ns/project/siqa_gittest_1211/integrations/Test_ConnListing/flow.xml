@@ -9,11 +9,11 @@
   <COMMENT></COMMENT>
 </INVOKE>
 
-<INVOKE NAME="SIQAJDBCAdapterTests" SERVICE="SIQAJDBCAdapterTests.adapterServices:getData">
+<INVOKE NAME="SIQAJDBCAdapterTests" SERVICE="SIQAJDBCAdapterTests.adapterServices:getData" DISABLED="true">
   <COMMENT></COMMENT>
 </INVOKE>
 
-<INVOKE NAME="DADA_GlobalVariable1" SERVICE="GB_1:readGlobalvariable">
+<INVOKE NAME="DADA_GlobalVariable1" SERVICE="GB_1:readGlobalvariable" DISABLED="true">
   <COMMENT></COMMENT>
 
   <!-- nodes -->
