@@ -8,7 +8,53 @@ packages:
   gitUsername: rimabarman
   gitBranch: main
 - name: TPP_services_in_FCS
+  version: "1.0"
   gitServerName: kvv
   gitUrl: https://github.com/Karthik-V-IBM-10
   gitUsername: Karthik-V-IBM-10
   gitBranch: main
+services:
+- serviceName: project.siqa_gittest_1211.integrations:Test_ConnListing
+  packages:
+  - name: SIQA_GITTEST_1211Project
+    version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
+- serviceName: SIQACloudStreamsTests:connetorOperations
+  packages:
+  - name: SIQACloudStreamsTests
+    version: "1.0"
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.66
+- serviceName: SIQACloudStreamsTests:createAccountConnectorService
+  packages:
+  - name: SIQACloudStreamsTests
+    version: "1.0"
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.66
+- serviceName: SIQACloudStreamsTests:retrieveAccountConnectorService
+  packages:
+  - name: SIQACloudStreamsTests
+    version: "1.0"
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.66
+- serviceName: SIQACloudStreamsTests:deleteAccountConnectorService
+  packages:
+  - name: SIQACloudStreamsTests
+    version: "1.0"
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.66
+- serviceName: SIQAJDBCAdapterTests.adapterServices:getData
+  packages:
+  - name: SIQA_GITTEST_1211Project
+    version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
+- serviceName: GB_1:readGlobalvariable
+  packages:
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+- serviceName: pub.globalVariable:getGlobalVariable
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2099
