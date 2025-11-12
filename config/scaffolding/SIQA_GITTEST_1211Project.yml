@@ -98,6 +98,42 @@ services:
   packages:
   - name: WmPublic
     version: 11.1.0.0.2099
+- serviceName: project.siqa_gittest_1211.integrations:Call_refData
+  packages:
+  - name: SIQA_GITTEST_1211Project
+    version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.66
+  - name: SIQACloudStreamsTests
+    version: "1.0"
+- serviceName: project.siqa_gittest_1211.referencedata:refData
+  packages:
+  - name: SIQA_GITTEST_1211Project
+    version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.66
+  - name: SIQACloudStreamsTests
+    version: "1.0"
 - serviceName: project.siqa_gittest_1211.integrations:Test_ConnListing
   packages:
   - name: SIQA_GITTEST_1211Project
