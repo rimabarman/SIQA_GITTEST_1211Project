@@ -14,6 +14,18 @@ packages:
   gitUsername: Karthik-V-IBM-10
   gitBranch: main
 services:
+- serviceName: project.siqa_gittest_1211.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:DBInsert
+  packages:
+  - name: SIQA_GITTEST_1211Project
+    version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
+- serviceName: project.siqa_gittest_1211.integrations:SIQAAdapterFlow
+  packages:
+  - name: SIQA_GITTEST_1211Project
+    version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
 - serviceName: project.siqa_gittest_1211.integrations:Test_ConnListing
   packages:
   - name: SIQA_GITTEST_1211Project
